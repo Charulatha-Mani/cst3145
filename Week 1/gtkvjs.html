@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 - Getting to Know Vue JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        Name: {{ name }} <br>
+        Misis: {{ misis }}<br>
+        Phone No: {{ phone }}<br>
+        Hobbies: {{ hobbies }}
+    </div>
+
+    <br>
+
+    <div id="app1">
+        {{propertyName}}
+    </div>
+    
+    <!-- Refernce to Vue.js -->
+    <script>
+        var app = new Vue ({
+            el: "#app",
+            data: {
+                name: "Charulatha Mani",
+                misis: "M00795786",
+                phone: "0545039885",
+                hobbies: "Reading"
+            },
+        });
+
+        var app1 = new Vue ({
+            el: "#app1",
+            data: {
+                propertyName: "LOLO"
+            },
+        });
+
+        app.message = "I have changed the data"
+    </script>
+</body>
+</html>
